@@ -1,0 +1,8 @@
+GCC = gcc
+CFLAGS = -g -Wall -Wshadow
+
+mathwait: mathwait.c
+	$(GCC) $(CFLAGS) mathwait.c -o mathwait
+
+clean: rm *.o mathwait
+
